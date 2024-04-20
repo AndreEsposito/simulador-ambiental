@@ -31,3 +31,4 @@ public class MeioAmbienteController {
         return ResponseEntity.status(HttpStatus.OK).body(sugestoes).build();
     }
 }
+
