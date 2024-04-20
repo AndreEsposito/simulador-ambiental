@@ -9,6 +9,6 @@ import lombok.RequiredArgsConstructor;
 @Builder
 @RequiredArgsConstructor
 @NoArgsConstructor
-public class MeioTransporte {
+public class InformacaoMeioTransporte {
     // Aqui ficará os atributos que o usuário irá informar sobre o meio de transporte
 }
