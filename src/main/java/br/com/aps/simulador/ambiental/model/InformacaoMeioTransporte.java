@@ -1,14 +1,38 @@
 package br.com.aps.simulador.ambiental.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Data
 @Builder
 @RequiredArgsConstructor
-@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "informacoes_meio_transporte")
 public class InformacaoMeioTransporte {
-    // Aqui ficará os atributos que o usuário irá informar sobre o meio de transporte
+
+    @Id
+    @Column(name = "cnh")
+    @JsonProperty("cnh")
+    private String cnh;
+
+    @JoinColumn(name = "id_tipo_transporte", referencedColumnName = "id_tipo_transporte")
+    @JsonProperty("id_tipo_transporte")
+    private Long id_tipo_transporte;
+
+    @Column(name = "tipo_combustivel")
+    @JsonProperty("tipo_combustivel")
+    private String tipoCombustivel;
+
+    @Column(name = "distancia_diaria_percorrida")
+    @JsonProperty("distancia_diaria_percorrida")
+    private Double distanciaDiariaPercorrida;
+
+    @Column(name = "consumo_litro")
+    @JsonProperty("consumo_litro")
+    private Double consumoLitro;
 }
