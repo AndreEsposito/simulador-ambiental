@@ -22,7 +22,7 @@ public class InformacaoMeioTransporte {
 
     @JoinColumn(name = "id_tipo_transporte", referencedColumnName = "id_tipo_transporte")
     @JsonProperty("id_tipo_transporte")
-    private Long id_tipo_transporte;
+    private Long idTipoTransporte;
 
     @Column(name = "tipo_combustivel")
     @JsonProperty("tipo_combustivel")
