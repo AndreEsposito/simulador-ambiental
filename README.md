@@ -14,18 +14,26 @@ O simulador é um projeto que promove a conscientização ambiental e incentiva 
 
 ## Endpoints
 
-1. **/usuarios/{id}/meio-transporte**:
-    - Método: POST
-    - Descrição: Este endpoint permite que um usuário salve as informações sobre o meio de transporte que utiliza. O {id} representa o identificador único do usuário.
+- **/usuarios/{id}**
+    1. **/meio-transporte**:
+        - Método: POST
+        - Descrição: Este endpoint permite que um usuário salve as informações sobre o meio de transporte que utiliza. O {id} representa o identificador único do usuário.
 
-2. **/usuarios/{id}/impactos-ambientais**:
-    - Método: GET
-    - Descrição: Este endpoint permite que um usuário consulte os impactos ambientais causados pelo meio de transporte que ele utiliza. O {id} representa o identificador único do usuário.
+    2. **/impactos-ambientais**:
+        - Método: GET
+        - Descrição: Este endpoint permite que um usuário consulte os impactos ambientais causados pelo meio de transporte que ele utiliza. O {id} representa o identificador único do usuário.
 
-3. **/usuarios/{id}/sugestoes**:
-    - Método: GET
-    - Descrição: Este endpoint fornece sugestões de como reduzir os impactos ambientais causados por um usuário de acordo com as informações dadas do meio de transporte utilizado.
-    - Ex de Sugestões: incluir mudanças de hábitos, escolhas de transporte mais sustentáveis, compartilhar caronas, utilizar bicicletas/caminhada dependendo da distância, entre outras práticas ambientais.
+    3. **/sugestoes**:
+        - Método: GET
+        - Descrição: Este endpoint fornece sugestões de como reduzir os impactos ambientais causados por um usuário de acordo com as informações dadas do meio de transporte utilizado.
+        - Ex de Sugestões: incluir mudanças de hábitos, escolhas de transporte mais sustentáveis, compartilhar caronas, utilizar bicicletas/caminhada dependendo da distância, entre outras práticas ambientais.
+- **/tipos-transportes**
+    1. **Salva no banco:**
+        - Método: POST
+        - Descrição: Este endpoint salva os tipos de transportes disponíveis no banco.
+    2. **Consulta no banco:**
+        - Método: GET
+        - Descrição: Este endpoint consulta os tipos de transportes disponíveis no banco.
 
 ## Requisitos Técnicos
 
@@ -38,7 +46,6 @@ Aqui contém os requisitos técnicos e seus devidos passo a passo, para rodar o 
 - Intellij IDE
 - Git: instalar e configurar (vários tutoriais no yt)
 - Github: cadastrar-se na plataforma
-- MySQL Workbench
 
 ### Docker
 
@@ -74,3 +81,42 @@ Aqui contém os requisitos técnicos e seus devidos passo a passo, para rodar o 
 
 Este é um processo básico para rodar um contêiner Docker local usando uma imagem genérica do MySQL. Você pode personalizar as configurações do MySQL conforme necessário, adicionando opções ao comando `docker run` ou montando volumes para persistência de dados, se desejar.
 
+### MySQL Workbench
+
+Depois que configurou, criou a imagem genérica do docker e criou a conexão com o banco, crie o banco e as tabelas com inserts utilizados para rodar o projeto:
+
+<details>
+
+<summary>Estrutura SQL</summary>
+    
+    -- Scripts para criar banco e tabelas para rodar projeto localmente
+    CREATE DATABASE simuladorambiental; -- cria o banco de dados
+
+    USE simuladorambiental; -- indica para o SGBD qual banco será utilizado
+
+    -- cria uma tabela dos tipos de transportes disponíveis
+    CREATE TABLE tipo_transporte (
+        id_tipo_transporte INT PRIMARY KEY,
+        descricao_tipo_transporte VARCHAR(100)
+    );
+
+    -- insere os dados na tabela tipo_transporte
+    INSERT INTO tipo_transporte (id_tipo_transporte, descricao_tipo_transporte) VALUES
+    (1, "Veículo de Grande Porte"),
+    (2, "Veículo de Médio Porte"),
+    (3, "Veículo de Pequeno Porte"),
+    (4, "Veículo Compartilhado de Grande Porte"),
+    (5, "Veículo Compartilhado de Médio Porte"),
+    (6, "Veículo Compartilhado de Pequeno Porte");
+
+    -- cria uma tabela das informações fornecidas do meio de transporte utilizado
+    CREATE TABLE informacoes_meio_transporte (
+    	cnh VARCHAR(11) PRIMARY KEY,
+        id_tipo_transporte INT,
+        tipo_combustivel VARCHAR(50),
+        distancia_diaria_percorrida DECIMAL(10, 2),
+        consumo_litro DECIMAL(10, 2),
+        FOREIGN KEY (id_tipo_transporte) REFERENCES tipo_transporte(id_tipo_transporte)
+    );
+
+</details>
