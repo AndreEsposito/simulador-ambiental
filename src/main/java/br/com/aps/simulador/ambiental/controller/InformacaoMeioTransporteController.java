@@ -113,7 +113,7 @@ public class InformacaoMeioTransporteController {
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
                             "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
-                            "Utilize moto, caso tenha, pois é um transporte rápido, Com um custo menor e que prejudica menos o meio ambiente."
+                            "Utilize moto, caso tenha, pois é um transporte rápido, com um custo menor e que prejudica menos o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
@@ -140,7 +140,7 @@ public class InformacaoMeioTransporteController {
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
                             "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
-                            "Utilize moto, caso tenha, pois é um transporte rápido, Com um custo menor e que prejudica menos o meio ambiente."
+                            "Utilize moto, caso tenha, pois é um transporte rápido, com um custo menor e que prejudica menos o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
