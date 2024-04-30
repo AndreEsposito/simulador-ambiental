@@ -113,21 +113,21 @@ public class InformacaoMeioTransporteController {
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
                             "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
-                            "Utilize moto, caso tenha, pois é um transporte mais rápido, menos custoso e polui menos o meio ambiente."
+                            "Utilize moto, caso tenha, pois é um transporte rápido, Com um custo menor e que prejudica menos o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois é sustentável e faz bem para a saúde.",
-                            "Pense em utilizar uma bicicleta elétrica caso estiver com pressa, pois além é um transporte mais rápido e é sustentável para o meio ambiente."
+                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois faz bem para a saúde e para o planeta.",
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 5) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Veja se não faz sentido utilizar onibus/metro, é um meio de transporte público mais barato e mais sustentável para o meio ambiente."
+                            "Veja se não faz sentido utilizar onibus/metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 6) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois é sustentável e faz bem para a saúde.",
-                            "Pense em utilizar uma bicicleta elétrica caso estiver com pressa, pois além é um transporte mais rápido e é sustentável para o meio ambiente."
+                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois faz bem para a saúde e para o planeta.",
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -139,23 +139,22 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
+                            "Utilize moto, caso tenha, pois é um transporte rápido, Com um custo menor e que prejudica menos o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois faz bem para a saúde e para o planeta.",
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 5) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Veja se não faz sentido utilizar onibus/metro, é um meio de transporte público mais barato e mais sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 6) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois faz bem para a saúde e para o planeta.",
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -167,13 +166,11 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 1) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Até o momento não existem alternativas sustentáveis."
                     ));
                 } else if (idTipoTransporte == 4) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -185,13 +182,13 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -204,22 +201,23 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
-                            "Utilize moto, caso tenha, pois é um transporte mais rápido, menos custoso e polui menos o meio ambiente."
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois é sustentável e faz bem para a saúde.",
-                            "Pense em utilizar uma bicicleta elétrica caso estiver com pressa, pois além é um transporte mais rápido e é sustentável para o meio ambiente."
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 5) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Veja se não faz sentido utilizar onibus/metro, é um meio de transporte público mais barato e mais sustentável para o meio ambiente."
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 6) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois é sustentável e faz bem para a saúde.",
-                            "Pense em utilizar uma bicicleta elétrica caso estiver com pressa, pois além é um transporte mais rápido e é sustentável para o meio ambiente."
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -231,23 +229,23 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 5) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Pense em utilizar uma bicicleta elétrica caso esteja com pressa, pois além de ser rápido é sustentável para o meio ambiente.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 6) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -259,13 +257,11 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 1) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Até o momento não existem alternativas mais sustentáveis."
                     ));
                 } else if (idTipoTransporte == 4) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -277,13 +273,13 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Recarga com energia renovável como um painel solar ou turbina eólica, Pode encontrar em parques com estacionamento público.",
+                            "Carregamento inteligente, que otimiza carga da bateria."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Recarga com energia renovável como um painel solar ou turbina eólica. Pode encontrar em parques com estacionamento público.",
+                            "Carregamento inteligente, que otimiza carga da bateria."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -296,22 +292,23 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em utilizar uma bicicleta, pois além de ser sustentável para o meio ambiente, também faz bem para a saúde.",
-                            "Utilize moto, caso tenha, pois é um transporte mais rápido, menos custoso e polui menos o meio ambiente."
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois é sustentável e faz bem para a saúde.",
-                            "Pense em utilizar uma bicicleta elétrica caso estiver com pressa, pois além é um transporte mais rápido e é sustentável para o meio ambiente."
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 5) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Veja se não faz sentido utilizar onibus/metro, é um meio de transporte público mais barato e mais sustentável para o meio ambiente."
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 6) {
                     sugestao.setDescricao(Arrays.asList(
-                            "Pense em fazer uma caminhada, já que o trajeto é pequeno, pois é sustentável e faz bem para a saúde.",
-                            "Pense em utilizar uma bicicleta elétrica caso estiver com pressa, pois além é um transporte mais rápido e é sustentável para o meio ambiente."
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -323,23 +320,23 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 5) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else if (idTipoTransporte == 6) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar metro, é um meio de transporte público barato e sustentável para o meio ambiente."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -351,13 +348,12 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 1) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Até o momento não existem alternativas mais sustentáveis."
                     ));
                 } else if (idTipoTransporte == 4) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Considere optar por um transporte público como um onibus, é uma opção com custo baixo.",
+                            "Veja se não faz sentido utilizar trem, é um meio de transporte público barato."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
@@ -369,13 +365,13 @@ public class InformacaoMeioTransporteController {
                 Long idTipoTransporte = informacaoMeioTransporte.get().getIdTipoTransporte();
                 if (idTipoTransporte == 2) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Recarga com energia renovável como um painel solar ou turbina eólica. Pode encontrar em parques com estacionamento público.",
+                            "Carregamento inteligente, que otimiza carga da bateria."
                     ));
                 } else if (idTipoTransporte == 3) {
                     sugestao.setDescricao(Arrays.asList(
-                            "sugestao 1",
-                            "sugestao 2"
+                            "Recarga com energia renovável como um painel solar ou turbina eólica. Pode encontrar em parques com estacionamento público.",
+                            "Carregamento inteligente, que otimiza carga da bateria."
                     ));
                 } else {
                     sugestao.setDescricao(Arrays.asList(
